@@ -9,28 +9,31 @@
             margin: 0;
             padding: 0;
             height: 100vh;
-            background: #f0f0f0;
+            background-color: #121212;
             font-family: Arial, sans-serif;
+            color: #ffffff;
         }
         model-viewer {
             width: 100%;
             height: 100%;
-            background-color: #f0f0f0;
+            background-color: #121212;
         }
         #controls {
             position: absolute;
             bottom: 20px;
             left: 20px;
-            background: rgba(255, 255, 255, 0.9);
+            background: rgba(30, 30, 30, 0.9);
             padding: 15px;
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
             z-index: 1000;
+            color: #ffffff;
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
         .progress-bar {
             width: 100%;
             height: 4px;
-            background: #ddd;
+            background: #2a2a2a;
             position: absolute;
             top: 0;
             left: 0;
@@ -46,11 +49,13 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            background: rgba(255, 255, 255, 0.9);
+            background: rgba(30, 30, 30, 0.9);
             padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
             display: none;
+            color: #ffffff;
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
     </style>
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
@@ -59,7 +64,7 @@
     <div id="loading">Loading Model...</div>
     
     <model-viewer
-        src="https://pub-b3b764b55e604a939e20ac09b2b101c0.r2.dev/wf-19k.glb"
+        src="https://pub-b3b764b55e604a939e20ac09b2b101c0.r2.dev/wf-200k.glb"
         camera-controls
         auto-rotate
         auto-rotate-delay="3000"
